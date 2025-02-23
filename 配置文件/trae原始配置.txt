@@ -1,0 +1,34 @@
+# NPM配置文件 (.npmrc)
+# 用于配置npm包管理器的镜像源和相关依赖的下载地址
+registry=https://registry.npmmirror.com
+dist-url=https://npmmirror.com/mirrors/node
+ELECTRON_MIRROR=https://npmmirror.com/mirrors/electron/
+SASSBINARYSITE=https://npmmirror.com/mirrors/node-sass
+PHANTOMJS_CDNURL=https://npmmirror.com/mirrors/phantomjs
+CHROMEDRIVER_CDNURL=https://npmmirror.com/mirrors/chromedriver
+OPERDRIVER_CDNURL=https://npmmirror.com/mirrors/operadriver
+SELENIUM_CDNURL=https://npmmirror.com/mirrors/selenium
+NODE_INSPECTOR_CDNURL=https://npmmirror.com/mirrors/node-inspector
+
+# Python pip配置文件 (pip.conf)
+# 用于配置Python包管理器pip的镜像源
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+[install]
+trusted-host = mirrors.aliyun.com
+
+# Maven配置文件 (settings.xml)
+# 用于配置Maven构建工具的镜像源
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <mirrors>
+        <mirror>
+            <id>aliyun</id>
+            <mirrorOf>central</mirrorOf>
+            <name>阿里云公共仓库</name>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </mirror>
+    </mirrors>
+</settings>

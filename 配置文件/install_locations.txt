@@ -1,0 +1,21 @@
+# NPM全局安装路径配置
+# 在命令行中执行以下命令来修改npm全局模块的安装位置：
+# npm config set prefix "D:/Dev/npm/global"
+# npm config set cache "D:/Dev/npm/cache"
+
+# Python pip安装路径
+# 在pip.ini中添加以下配置（Windows路径）：
+[global]
+index-url = https://mirrors.aliyun.com/pypi/simple/
+target = D:\Dev\Python\Lib\site-packages
+cache-dir = D:\Dev\Python\pip\cache
+
+# Maven本地仓库路径
+# 在settings.xml的<settings>标签下添加：
+<localRepository>D:\Dev\Maven\repository</localRepository>
+
+# 注意：
+# 1. 请根据实际情况修改以上路径
+# 2. 确保目标路径所在的磁盘有足够的存储空间
+# 3. 路径中避免使用中文和特殊字符
+# 4. 建议在修改前备份原有的配置文件
